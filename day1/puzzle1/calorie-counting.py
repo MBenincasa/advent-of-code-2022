@@ -54,7 +54,4 @@ with open('../input.txt', 'r') as fileInput:
             print(f"list: {list}")
             sum = 0
 
-    list.sort(reverse=True)
-    print(f"list reverse sorted: {list}")
-
-    print(f"result: {list[0]}")
+    print(f"result: {max(list)}")
