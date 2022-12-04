@@ -13,45 +13,45 @@ Following the Elf's instructions for the second column, what would your total sc
 
 """
 
-def getPointsWon(oppnent, player) -> int:
+def getPointsWon(opponent, player) -> int:
 
     match player:
         case 'X':
             print('Player: Rock')
 
-            if oppnent == 'A':
+            if opponent == 'A':
                 print('Opponent: Rock - Change with: Scissors')
                 return 3 + 0
-            elif oppnent == 'B':
+            elif opponent == 'B':
                 print('Opponent: Paper - No change')
                 return 1 + 0
-            elif oppnent == 'C':
+            elif opponent == 'C':
                 print('Opponent: Scissors - Change with: Paper')
                 return 2 + 0
 
         case 'Y':
             print('Player: Paper')
             
-            if oppnent == 'A':
+            if opponent == 'A':
                 print('Opponent: Rock - Change with: Rock')
                 return 1 + 3
-            elif oppnent == 'B':
+            elif opponent == 'B':
                 print('Opponent: Paper - No change')
                 return 2 + 3
-            elif oppnent == 'C':
+            elif opponent == 'C':
                 print('Opponent: Scissors - Change wth: Scissors')
                 return 3 + 3
 
         case 'Z':
             print('Player: Scissors')
 
-            if oppnent == 'A':
+            if opponent == 'A':
                 print('Opponent: Rock - Change with: Paper')
                 return 2 + 6
-            elif oppnent == 'B':
+            elif opponent == 'B':
                 print('Opponent: Paper')
                 return 3 + 6
-            elif oppnent == 'C':
+            elif opponent == 'C':
                 print('Opponent: Scissors - Change with: Rock')
                 return 1 + 6
 

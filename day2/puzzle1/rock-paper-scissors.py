@@ -25,45 +25,45 @@ What would your total score be if everything goes exactly according to your stra
 
 """
 
-def getPointsWon(oppnent, player) -> int:
+def getPointsWon(opponent, player) -> int:
 
     match player:
         case 'X':
             print('Player: Rock')
 
-            if oppnent == 'A':
+            if opponent == 'A':
                 print('Opponent: Rock')
                 return 1 + 3
-            elif oppnent == 'B':
+            elif opponent == 'B':
                 print('Opponent: Paper')
                 return 1 + 0
-            elif oppnent == 'C':
+            elif opponent == 'C':
                 print('Opponent: Scissors')
                 return 1 + 6
 
         case 'Y':
             print('Player: Paper')
             
-            if oppnent == 'A':
+            if opponent == 'A':
                 print('Opponent: Rock')
                 return 2 + 6
-            elif oppnent == 'B':
+            elif opponent == 'B':
                 print('Opponent: Paper')
                 return 2 + 3
-            elif oppnent == 'C':
+            elif opponent == 'C':
                 print('Opponent: Scissors')
                 return 2 + 0
 
         case 'Z':
             print('Player: Scissors')
 
-            if oppnent == 'A':
+            if opponent == 'A':
                 print('Opponent: Rock')
                 return 3 + 0
-            elif oppnent == 'B':
+            elif opponent == 'B':
                 print('Opponent: Paper')
                 return 3 + 6
-            elif oppnent == 'C':
+            elif opponent == 'C':
                 print('Opponent: Scissors')
                 return 3 + 3
 
