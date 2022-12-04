@@ -38,10 +38,10 @@ PRIORITY = list(string.ascii_lowercase) + list(string.ascii_uppercase)
 
 def main() -> None:
     with open('../input.txt', 'r') as fileInput:
-        Lines = fileInput.readlines()
+        lines = fileInput.readlines()
         
         sum = 0
-        for line in Lines:
+        for line in lines:
             mid = int(len(line) / 2)
             fs, ls = line[:mid], line[mid:]
             print(f"First-half string: {fs}")

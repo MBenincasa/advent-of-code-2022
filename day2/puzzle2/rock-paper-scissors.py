@@ -56,11 +56,11 @@ def getPointsWon(opponent, player) -> int:
                 return 1 + 6
 
 with open('../input.txt', 'r') as fileInput:
-    Lines = fileInput.readlines()
+    lines = fileInput.readlines()
 
     score = 0
 
-    for line in Lines:
+    for line in lines:
         linesSplitted = line.split()
         print(linesSplitted)
         score += getPointsWon(linesSplitted[0], linesSplitted[1])

@@ -9,12 +9,12 @@ Find the top three Elves carrying the most Calories. How many Calories are those
 """
 
 with open('../input.txt', 'r') as fileInput:
-    Lines = fileInput.readlines()
+    lines = fileInput.readlines()
 
     list = []
 
     sum = 0
-    for line in Lines:
+    for line in lines:
         i = line.strip()
 
         if i != '':
