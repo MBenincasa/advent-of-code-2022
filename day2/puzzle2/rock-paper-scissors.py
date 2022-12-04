@@ -23,7 +23,7 @@ def getPointsWon(oppnent, player) -> int:
                 print('Opponent: Rock - Change with: Scissors')
                 return 3 + 0
             elif oppnent == 'B':
-                print('Opponent: Paper - No chnage')
+                print('Opponent: Paper - No change')
                 return 1 + 0
             elif oppnent == 'C':
                 print('Opponent: Scissors - Change with: Paper')
