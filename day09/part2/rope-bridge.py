@@ -485,8 +485,8 @@ def main() -> None:
 
         ropePointsSeen = set()
 
-        for instr in lines:
-            direction, steps = instr.split(" ")
+        for line in lines:
+            direction, steps = line.split()
 
             for _ in range(int(steps)):
                 dx, dy = getDirection(direction)
